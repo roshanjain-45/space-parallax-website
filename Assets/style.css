@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-size: cover;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.background{
+    transform: translateZ(-30px) scale(4);
+}
+.foreground{
+    transform: translateZ(-8px) scale(1.8) translateY(100px);
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 400px;
+    -webkit-text-stroke: 4px #fff;
+    color: transparent;
+    z-index: 1;
+}
+.sec2{
+    background: rgb(45, 45, 45);
+    color: #fff;
+    padding: 5rem 0px;
+}
+
+.subHeading{
+    font-size: 5rem;
+    padding: 0px 10rem;
+}
+
+.para{
+    font-size: 1.25rem;
+    padding: 0 8rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image: url(./bg6.jpg);
+}
+.bg2{
+    background-image: url(./bg5.jpg);
+}
+.bg3{
+    background-image: url(./bg4.jpg);
+}
+
+.planet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    transform: translate(-50%,-50%);
+    color: black;
+    background-color: white;
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 2.5rem;
+}
